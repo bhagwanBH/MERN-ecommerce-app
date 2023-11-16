@@ -16,8 +16,9 @@ dotenv.config();
 //database config
 connectDB();
 //esmodulefix
-export const __filename = fileURLTopath(import.meta.url);
+ const __filename = fileURLTopath(import.meta.url);
 const __dirname = path.dirname(__filename);
+export fileURLTopath;
 
 
 //rest object
