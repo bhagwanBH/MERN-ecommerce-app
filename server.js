@@ -8,7 +8,7 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 import path from "path";
-import {fileURLTopath} from 'url';
+import {fileURLTopath , url} from 'url';
 
 //config env
 dotenv.config();
@@ -18,7 +18,7 @@ connectDB();
 //esmodulefix
  const __filename = fileURLTopath(import.meta.url);
 const __dirname = path.dirname(__filename);
-export fileURLTopath;
+
 
 
 //rest object
